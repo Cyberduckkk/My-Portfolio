@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #0a0a0a;
+    background-image: url(img/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Prompt', sans-serif;
+}
+.nav-top{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 999;
+    position: fixed;
+    transition: .4s;
+    width: 100%;
+    background-color: #eeeff3;
+}
+.logo-box{
+    text-align: center;
+    line-height: 80px;
+    width: 100%;
+}
+.logo-box a{
+    letter-spacing: 4px;
+    text-align: center;
+    color: #181818;
+    font-weight: 900;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.nav-side{
+    width: 8%;
+    height: 100vh;
+    left: 0;
+    text-align: center;
+    position: absolute;
+    border-radius: 0 10px 10px 0;
+    z-index: 1;
+}
+.menu{
+    position: absolute;
+    margin: 50px 40%;
+}
+.menu li{
+    transition: .5s;
+    list-style: none;
+    margin: 50px 0;
+}
+.menu li a{
+    color: #0a0a0a;
+    font-size: 27px;
+    transition: .5s;
+}
+.menu li:hover{
+    transform: scale(1.2) translateX(8px);
+}
+#twitter:hover{
+    color: #00acee;
+}
+#whatsapp:hover{
+    color: #25D366;
+}
+#youtube:hover{
+    color: #FF0000;
+}
+#meta:hover{
+    color: #0080FB;
+}
+#instagram:hover{
+    color: #E1306C;
+}
+#linkedin:hover{
+    color: #0A66C2;
+}
+.banner{
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+}
+.banner-text{
+    text-align: center;
+    z-index: 1000;
+    align-items: center;
+    padding: 200px 0;
+    font-family: 'Prompt', sans-serif;
+}
+::selection{
+    background-color: white;
+}
+.banner-text h1{
+    font-size: 70px;
+    color: #212121;
+}
+.text-white{
+    color: white;
+}
+#name{
+    letter-spacing: 5px;
+}
+.button-box{
+    width: 30%;
+    margin:  10px auto;
+}
+.banner-text h2{
+    font-family: 'Prompt', sans-serif;
+
+}
+.btn{
+    margin: 10px 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Prompt', sans-serif;
+    transition: .5s;
+    cursor: pointer;
+    background-color: #fff;
+}
+.btn:hover{
+    transform: translateX(20px);
+}
+.profile{
+    width: 30%;
+    background: transparent;
+    margin: 10%;
+    display: flex;
+}
+.profile img{
+    width: 100%;
+}
+#about-me{
+    width: 100%;
+    position: relative;
+}
+.profile-text{
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    width: 50%;
+}
+.profile-text h1{
+    position: relative;
+    font-size: 40px;
+    margin: 100px 0 10px 0;
+}
+.profile-text p{
+    margin: 20px 0;
+}
+.skills{
+    margin-top: 50px;
+}
+.skill-box div{
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin: 15px 0;
+}
+.skills-text{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+.skill-box span{
+    color: white;
+    text-transform: uppercase;
+}
+.design{
+    width: 89%;
+}
+.html{
+    width: 94%;
+}
+.css{
+    width: 74%;
+}
+.javascript{
+    width: 24%;
+}
+.reactjs{
+    width: 14%;
+}
+.bootstrap{
+    width: 34%;
+}
+.details li{
+    list-style: none;
+}
+.details li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.calender li{
+    padding: 10px;
+}
+.details{
+    margin: 50px 0;
+}
+footer{
+    margin-top: 150px;
+    display: flex;
+    height: 30vh;
+    width: 100%;
+}
+.footer-menu{
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+.home-btn{
+    text-align: center;
+    width: 100%;
+}
+.home-footer a{
+    font-size: 20px;
+    background-color: white;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 7px;
+}
+.form-text{
+    margin: 30px 0;
+}
+.form-text h1{
+    font-size: 35px;
+    color: #fff;
+}
+.input-box input{
+    width: 99%;
+    padding-left: 15px;
+    height: 40px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid rgb(54, 49, 49);
+    border-radius: 20px;
+    margin: 10px 0;
+    color: white;
+}
+.input-box textarea{
+    margin: 30px 0;
+    width: 99%;
+    background-color: transparent;
+    resize: none;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+}
+.msg{
+    height: 200px;
+}
+.footer-btn{
+    margin: 0 0 40px 0;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    transition: .5s;
+    cursor: pointer;
+    border: none;
+}
+.footer-btn:hover{
+    color: white;
+    background-color: #0a0a0a;
+}
+.bottom-text{
+    color: #fff;
+    margin: 30px 0;
+    text-align: center;
+}
+.bottom-text h4{
+    margin: 30px 0;
+}
+#nav-links:hover{
+    color: #ff4838;
+}
+@media(max-width:330px){
+    .current-page{
+        margin-top: 10px;
+    }
+}
+@media(max-width:537px){
+    .banner-text h1{
+        font-size: 200px;
+    }
+}
+@media(max-width:665px){
+    .banner-text h1{
+        font-size: 60px;
+    }
+}
+@media(max-width:767px){
+    .form-text h1{
+        font-size: 24px;
+    }
+    .skill-box{
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+    }
+    .design{
+        width: 89%;
+    }
+    .html{
+        width: 94%;
+    }
+    .css{
+        width: 74%;
+    }
+    .javascript{
+        width: 24%;
+    }
+    .reactjs{
+        width: 14%;
+    }
+    .bootstrap{
+        width: 34%;
+    }
+    .skill-box div{
+        float: left;
+        margin: 10px auto;
+    }
+    .skills-text{
+        font-size: 20px;
+    }
+    .banner-text h2{
+        color: #fff;
+    }
+    .button-box{
+        width: 50%;
+    }
+    .logo-box a{
+        font-size: 25px;
+    }
+    .profile{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+    #about-me{
+       margin: 100px 0;
+    }
+    .profile-text h1{
+        font-size: 30px;
+    }
+    .profile-text{
+        margin: 20px 0;
+        width: 100%;
+    }
+    .column{
+        flex-direction: column;
+    }
+}
+.column{
+    display: flex;
+}
+.current-page{
+    margin: auto;
+    width: 80%;
+}
